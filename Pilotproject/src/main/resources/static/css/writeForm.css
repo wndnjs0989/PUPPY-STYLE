@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.title-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+h3 {
+    display: inline-block; /* 글자 길이에 맞춰 박스 형성 */
+    position: relative;    /* 이미지 위치를 잡기 위한 기준 */
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+.underline-img {
+    display: block;
+    /* 이미지의 최대 너비를 글자 크기에 맞춰 100px~150px 정도로 고정합니다 */
+    width: 120px; 
+    height: auto;
+    /* 가운데 정렬을 위해 auto 사용 */
+    margin: -10px auto 0 auto; 
+}
+body {
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    border: 1px solid #e0e0e0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+input[name="mtel1"], input[name="mtel2"], input[name="mtel3"] {
+    width: 100PX;
+    display: inline-block;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #f7a88a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+input[type="reset"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #f7a88a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #f59670;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="button"] {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}

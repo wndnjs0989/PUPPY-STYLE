@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body { font-family: 'Pretendard', sans-serif; color: #555; padding: 20px; }
+
+.admin-header {
+    background-color: #fcfcfc;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    border-left: 8px solid #a7d8d4;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h3 { color: #5d4a41; margin: 0 0 10px 0; }
+
+.admin-header a {
+    text-decoration: none;
+    color: #888;
+    margin-right: 15px;
+    font-size: 0.9rem;
+}
+
+.member-count {
+    display: inline-block;
+    background: #fff0f5;
+    color: #ff85a2;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* 테이블 디자인 */
+.member-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #f0f0f0;
+}
+
+.member-table th {
+    background-color: #fffaf0;
+    color: #5d4a41;
+    padding: 18px;
+    border-bottom: 2px solid #ffe4b5;
+}
+
+.member-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f9f9f9;
+    text-align: center;
+}
+
+/* 마우스 올렸을 때 말랑한 느낌 */
+.member-table tbody tr:hover {
+    background-color: #fdf5e6;
+}

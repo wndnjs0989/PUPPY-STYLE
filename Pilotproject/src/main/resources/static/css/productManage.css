@@ -1,0 +1,195 @@
+@charset "UTF-8";
+h3 {
+    text-align: center;      /* 가운데 정렬 */
+    color: #555;             /* 글자색을 깔끔한 회색으로 */
+    margin: 30px 0;          /* 위아래 여백을 넉넉히 주어 답답함 해소 */
+    font-size: 1.5rem;       /* 글자 크기 조정 */
+}
+a[href="/"] {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #fafafa;
+    color: #8d6e63;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+a[href="/"]:hover {
+    background-color: #ffebee;
+    border-color: #ffcdd2;
+    transform: translateY(-2px);
+}
+a[href="/admin/memberList"] {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #fafafa;
+    color: #8d6e63;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+a[href="/admin/memberList"]:hover {
+    background-color: #ffebee;
+    border-color: #ffcdd2;
+    transform: translateY(-2px);
+}
+a[href="/logout"] {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #fafafa;
+    color: #8d6e63;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+a[href="/logout"]:hover {
+    background-color: #ffebee;
+    border-color: #ffcdd2;
+    transform: translateY(-2px);
+}
+a[href="/admin/productWriteForm"] {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #fafafa;
+    color: #8d6e63;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+a[href="/admin/productWriteForm"]:hover {
+    background-color: #ffebee;
+    border-color: #ffcdd2;
+    transform: translateY(-2px);
+}
+p {   
+    color: #555;             /* 글자색을 깔끔한 회색으로 */
+    margin: 30px 0;          /* 위아래 여백을 넉넉히 주어 답답함 해소 */
+    font-size: 1rem;       /* 글자 크기 조정 */
+}
+/* 1. 기본 스타일 */
+body {
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background-color: #fafafa;
+    color: #444;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 2. 상단 메뉴 버튼 영역 */
+.menu-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-container a {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 0 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #eee;
+    transition: 0.3s;
+    color: #555;
+}
+
+.menu-container a:hover {
+    background-color: #fff3e0; /* 연한 오렌지빛 */
+    border-color: #ffe0b2;
+}
+
+/* 3. 테이블 전체 스타일 */
+table {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+/* 4. 테이블 헤더 스타일 */
+th {
+    background-color: #fdfaf7; /* 아주 연한 파스텔 오렌지 */
+    padding: 15px 10px;
+    font-size: 13px;
+    color: #777;
+    border-bottom: 2px solid #f0ece9;
+    text-align: center;
+}
+
+/* 5. 데이터 셀 스타일 */
+td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #f9f9f9;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* 6. 설명 부분 (말줄임 처리) */
+.description-cell {
+    max-width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left !important;
+    padding: 10px 15px !important;
+    color: #666;
+}
+
+.description-cell:hover {
+    white-space: normal;
+    background-color: #fffaf0;
+    cursor: pointer;
+}
+
+/* 7. 이미지 스타일 */
+img {
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+/* 8. 수정/삭제 버튼 스타일 */
+.btn-action {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 2px;
+}
+
+.btn-update { color: #5c7cfa; } /* 파스텔 블루 */
+.btn-delete { color: #fa5252; } /* 파스텔 레드 */
+
+.btn-action:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
