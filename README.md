@@ -10,7 +10,7 @@ Spring Boot를 이용한 개인 프로젝트입니다.
 - **Backend:** Java, Spring Boot, Spring MVC
 - **Database / ORM:** MySQL, MyBatis
 - **Frontend:** HTML, CSS, JavaScript
-- **Tools & Environment:** PyCharm, ERwin, OpenOffice, StarUML, GitHub
+- **Tools & Environment:** ERwin, OpenOffice, StarUML, GitHub
 
 # 주요 기능
 
