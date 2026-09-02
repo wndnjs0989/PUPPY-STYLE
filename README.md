@@ -1,6 +1,4 @@
-# PUPPY-STYLE
-
-# 개인프로젝트 
+# PUPPY-STYLE [개인프로젝트]
 Spring Boot를 이용한 개인 프로젝트입니다.
 
 
