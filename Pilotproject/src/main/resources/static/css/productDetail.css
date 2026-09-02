@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* 전체 레이아웃: 가로폭을 적절히 제한하여 집중도 향상 */
+.product-wrap { max-width: 800px; margin: 40px auto; padding: 20px; }
+
+/* 1. 목록으로 가기 버튼 */
+.btn-box { margin-bottom: 20px; }
+.back-btn {
+    text-decoration: none; color: #8d6e63; font-size: 14px;
+    padding: 8px 16px; border-radius: 20px; background: #f4f4f4;
+}
+
+/* 2. 상세 페이지 컨테이너: 이미지(4) : 정보(6) 비율로 배치 */
+.detail-container { display: flex; gap: 30px; align-items: flex-start; }
+.detail-left { flex: 0.8; } /* 사진 영역을 약간 축소 */
+.detail-left img { width: 100%; border-radius: 15px; display: block; }
+
+/* 3. 오른쪽 상세 정보 */
+.detail-right { flex: 1.2; } /* 텍스트 영역을 조금 더 확보 */
+h2 { font-size: 22px; margin-bottom: 10px; color: #333; }
+.price { font-size: 20px; font-weight: bold; color: #d32f2f; margin-bottom: 20px; }
+
+/* 4. 버튼 그룹 */
+.btn-group { display: flex; gap: 10px; margin: 20px 0; }
+.buy-btn, .cart-btn { 
+    padding: 12px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; 
+}
+.buy-btn { flex: 2; background: #ffebee; color: #e91e63; }
+.cart-btn { flex: 1; background: #e3f2fd; color: #1976d2; }
+
+/* 5. 상세 설명 */
+.description { margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; }
+.description h3 { font-size: 16px; margin-bottom: 10px; color: #444; }

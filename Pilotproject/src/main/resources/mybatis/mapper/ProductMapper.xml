@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.Pilotproject.dao.ProductDAO">
+	<select id="selectAllProducts" resultType="com.springboot.Pilotproject.dto.ProductDTO">
+		select * from product order by pnum desc
+	</select>
+	<select id="selectProductByPnum" parameterType="long"
+        resultType="com.springboot.Pilotproject.dto.ProductDTO">
+    select * from product where pnum = #{pnum}
+	</select>
+	<insert id="insertProduct" parameterType="com.springboot.Pilotproject.dto.ProductDTO">
+    insert into product(pnum,pname,pdecimal,pquantity,pmemo,pdate,pfoutseaeons,psize,pcolor,pobject,pimage,pcategory,mno)
+    values(product_seq.nextval,#{pname},#{pdecimal},#{pquantity},#{pmemo},SYSDATE,#{pfoutseaeons},#{psize},#{pcolor},#{pobject},#{pimage},#{pcategory},#{mno})
+	</insert>
+	<update id="updateProduct" parameterType="com.springboot.Pilotproject.dto.ProductDTO">
+		update product
+		set pname = #{pname},
+            pdecimal = #{pdecimal},
+            pquantity = #{pquantity},
+            pmemo = #{pmemo},
+            pfoutseaeons = #{pfoutseaeons},
+            psize = #{psize},
+            pcolor = #{pcolor},
+            pobject = #{pobject},
+            pimage = #{pimage},
+            pcategory = #{pcategory}
+       	where pnum = #{pnum}
+	</update>
+	<delete id="deleteProduct">
+		delete from product
+		where pnum =#{pnum}
+	</delete>
+</mapper>

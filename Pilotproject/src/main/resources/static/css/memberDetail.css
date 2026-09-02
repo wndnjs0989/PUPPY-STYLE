@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* 기존 updateForm.css와 동일한 테마 적용 */
+.update-wrap {
+    width: 700px; /* 상세 페이지는 700px 정도로 조금 더 콤팩트하게 */
+    margin: 50px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.update-wrap h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5DADE2;
+}
+
+.update-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.update-table th, .update-table td {
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.update-table th {
+    width: 150px;
+    background: #f9fcff;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+.btn-area {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cancel-btn {
+    padding: 12px 30px;
+    background: #95A5A6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.save-btn {
+    padding: 12px 30px;
+    background: #E74C3C; /* 삭제 버튼은 주의를 위해 빨간 계열 권장 */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}

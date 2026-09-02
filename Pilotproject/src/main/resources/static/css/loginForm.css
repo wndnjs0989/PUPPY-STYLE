@@ -1,0 +1,75 @@
+@charset "UTF-8";
+	h1 {
+    text-align: center;      /* 가운데 정렬 */
+    color: #555;             /* 글자색을 깔끔한 회색으로 */
+    margin: 30px 0;          /* 위아래 여백을 넉넉히 주어 답답함 해소 */
+    font-size: 1.5rem;       /* 글자 크기 조정 */
+}
+/* 테이블 자체의 테두리 제거 */
+.login-wrapper { border: none !important; }
+
+/* 둥근 로그인 박스 스타일 */
+.login-box {
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px; /* 여기서 둥근 모양 결정 */
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* 입력창 스타일 */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* 입력창도 둥글게 */
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+/* 버튼 배치 */
+.btn-group { display: flex; gap: 8px; margin-top: 10px; }
+
+.btn-submit, .btn-reset {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit { background-color: #f5a687; color: white; }
+.btn-reset { background-color: #eee; color: #777; }
+
+/* 링크 스타일 */
+.join-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #8d6e63;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.menu-area {
+    padding: 20px 0 !important;
+}
+
+/* 메뉴 링크 스타일 */
+.menu-link {
+    display: inline-block;
+    padding: 8px 18px; /* 버튼처럼 보이게 안쪽 여백 설정 */
+    margin: 0 5px;     /* 링크 사이의 간격 */
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 20px; /* 살짝 둥글게 */
+    transition: all 0.2s ease;
+}
+
+/* 마우스를 올렸을 때 살짝 강조 */
+.menu-link:hover {
+    background-color: #ffebee; /* 연한 핑크톤 */
+    color: #8d6e63;
+}

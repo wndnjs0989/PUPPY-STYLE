@@ -1,0 +1,51 @@
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.withdraw-wrap {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    width: 450px;
+    text-align: center;
+}
+
+/* 제목 및 안내 문구 */
+.header-section h2 { color: #333; margin-top: 10px; }
+.header-section p { color: #777; font-size: 0.9em; margin-bottom: 30px; }
+
+/* 섹션 스타일 (이유/확인) */
+.reason-section, .confirm-section {
+    background: #fdfaf7;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* 버튼 스타일 */
+.btn-withdraw, .btn-home {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.btn-withdraw { background-color: #d19a9a; color: white; }
+.btn-withdraw:hover { background-color: #bc8686; }
+
+.btn-home { background-color: #9ab4c4; color: white; }
+.btn-home:hover { background-color: #839dad; }
+
+/* 입력창 및 체크박스 */
+textarea { width: 100%; height: 80px; margin-top: 10px; border-radius: 8px; border: 1px solid #ddd; }
