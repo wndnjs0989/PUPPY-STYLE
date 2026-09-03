@@ -28,7 +28,7 @@ Spring Boot를 이용한 개인 프로젝트입니다.
 # 담당한 부분
 | 구분 | 팀원 이름 | 담당 부분 |
 | :--- | :--- | :--- |
-| **팀원** | 이창희 | DTO, DAO, Controller, XML, JSP, CSS, 발표 자료 (개인 프로젝트 전담) |
+| **팀장** | 이창희 | DTO, DAO, Controller, XML, JSP, CSS, 발표 자료 (개인 프로젝트 전담) |
 
 
 # Git 협업 규칙
